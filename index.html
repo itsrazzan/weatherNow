@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="assets/cloudy.png" type="image/png" />
+    <title>WeatherNow</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="left-panel">
+        <div class="top-container">
+          <div class="rounded-box">
+            <div class="greeting-container">
+              <h2 id="greeting">
+                <span id="greeting-text">Good Morning</span>,
+                <span id="username" contenteditable="false">Razzan</span>
+                <button id="edit-name" class="edit-button">
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"
+                    />
+                  </svg>
+                </button>
+              </h2>
+            </div>
+
+            <div class="time-date-container">
+              <!-- Time and date content to be filled -->
+              <div id="clock" class="time">11.35 AM</div>
+              <div id="date" class="date">Monday, may 19</div>
+            </div>
+
+            <!--search box -->
+            <div class="search-container">
+              <div class="search-box">
+                <input
+                  type="text"
+                  id="search-kota"
+                  class="search-input"
+                  placeholder="Search your city"
+                />
+                <button id="search-button" class="search-button">
+                  <svg
+                    class="search-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-container">
+          <div class="welcome-content">
+            <div class="welcome-title-container">
+              <p>Welcome to WeatherNow!</p>
+            </div>
+            <div class="welcome-text-container">
+              <p>
+                Experience real-time weather updates at your fingertips. With
+                WeatherNow, <br />
+                you can effortlessly check the current temperature and weather
+                conditions <br />
+                for any location you search. While this app is still a work in
+                progress, <br />
+                I'm excited about the journey ahead. Each step in its
+                development brings new <br />
+                challenges and learning opportunities, fueling my passion and
+                commitment <br />to delivering a better experience. Thank you
+                for being part of this adventure!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="right-panel">
+        <p class="result-header">Your Search Result</p>
+        <div id="weather-result" class="weather-header">
+          <!-- result akan ditampilkan disini -->
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>
+        A simple Weather Check App | Created by
+        <strong><a href="https://github.com/AgilRazzan">Agil Razzan</a> </strong
+        >as a Javascript learning project
+      </p>
+    </div>
+  </body>
+  <!-- <script src="fromClaude.js"></script> -->
+  <script src="app.js"></script>
+</html>

@@ -1,0 +1,436 @@
+/* -----------------------------------------------
+    Style untuk Background, statis tidak berubah-rubah
+   -----------------------------------------------*/
+/* 
+   make sure html/body fill the screen */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+/* elegant two-stop gradient from top-left to bottom-right */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+
+  /* fallback solid color */
+  background-color: rgb(204, 213, 246);
+
+  /* gradient overlay */
+  background-image: linear-gradient(
+    135deg,
+    rgb(143, 160, 246) 0%,
+    rgb(172, 186, 242) 60%,
+    rgb(248, 164, 158) 100%
+  );
+
+  /* smooth rendering on older browsers */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/* ==============style Main Container dan semua didalamnya ================*/
+
+/* main-container */
+.main-container {
+  width: 95%;
+  height: 90vh;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 0 20px 30px rgba(23, 23, 23, 0.15);
+  overflow: hidden;
+  display: flex;
+  margin-top: 18pxx;
+  margin-bottom: 20px; /* Extra space for footer */
+}
+
+.left-panel {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-container {
+  height: 50%;
+  background-color: rgb(255, 255, 255);
+  background-size: cover;
+  color: white;
+  padding: 30px;
+  position: relative;
+  border-top-left-radius: 20px;
+}
+.rounded-box {
+  height: 110%;
+  width: 100%;
+  border-radius: 20px;
+  background: linear-gradient(rgba(30, 60, 114, 0.85), rgba(30, 60, 114, 0.85)),
+    url("assets/mountain.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 40px;
+}
+
+.greeting-container {
+  height: 15%;
+  margin-bottom: 20px;
+}
+
+.greeting-container h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.time-date-container {
+  height: 30%;
+}
+
+/* Style for clock */
+.time {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+/* position for am / pm */
+.ampm {
+  position: relative;
+  font-size: 42px;
+  margin-left: 8px;
+  font-weight: bold;
+}
+.date {
+  font-size: 18px;
+}
+/* CSS for search box */
+.search-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.search-box {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px 50px 12px 20px;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: white;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.search-button {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-50%) scale(1.05);
+}
+
+.search-button:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+.search-icon {
+  color: #0c2a7d;
+  width: 18px;
+  height: 18px;
+}
+
+/* Add this to make the search box consistent with the design in the image */
+.top-container .search-box {
+  margin-top: 30px;
+}
+
+.bottom-container {
+  height: 50%;
+  background-color: white;
+  padding: 40px;
+  border-bottom-left-radius: 20px;
+}
+
+.welcome-content {
+  height: 100%;
+}
+
+.welcome-title-container {
+  height: 15%;
+  margin-bottom: 20px;
+}
+
+.welcome-title-container p {
+  font-size: 28px;
+  font-weight: bold;
+  color: #24478f;
+}
+
+.welcome-text-container {
+  height: 85%;
+  color: #566787;
+}
+.welcome-text-container p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.right-panel {
+  width: 35%;
+  height: 100%;
+  background-color: #0c2a7d;
+  color: white;
+  padding: 40px 30px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: auto;
+}
+.result-header {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+}
+
+// ===== not used yet =====
+.weather-header {
+  height: 20%;
+  margin-bottom: 30px;
+}
+
+.current-weather-container {
+  height: 40%;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.location-container {
+  height: 60%;
+  font-size: 24px;
+}
+
+.weather-display {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather-icon-container {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.temperature-container {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.weather-condition-container {
+  height: 10%;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+}
+// ====== not used yet ======
+
+.footer {
+  width: 95%;
+  margin: 0 auto;
+  background-color: rgba(144, 139, 139, 0.15);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+}
+
+.footer p {
+  text-align: center;
+  color: rgb(23, 50, 104);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.footer a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.footer a:hover {
+  color:  rgb(23, 50, 104);
+  text-shadow: 0 0 8px rgba(50, 47, 47, 0.5);
+  transform: translateY(-1px);
+  display: inline-block;
+}
+
+/* -----------------------------------------------
+    Style untuk Weather Result
+   -----------------------------------------------*/
+
+.weather-result-item {
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.new-result {
+  animation: slideDown 1s ease-out;
+}
+.timeDate {
+  justify-content: flex-end;
+}
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+//Efek loading
+.load-side {
+  font-size: 20px;
+  animation: blink 1s infinite;
+}
+.weather-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding-right: 18px;
+  padding-left: 18px;
+}
+
+.weather-icon {
+  display: flex;
+  align-items: center;
+}
+
+.time-stamp {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+}
+
+.time-stamp .date {
+  font-size: 14px;
+}
+
+.time-stamp .time {
+  font-size: 12px;
+}
+
+.error-tag p {
+  font-size: 10px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.error-animation {
+  width: 200px;
+  height: 150px;
+  margin: 5px auto;
+  display: block;
+  border-radius: 5px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#username {
+  display: inline-block;
+  min-width: 20px;
+  padding: 0 4px;
+  border-radius: 4px;
+}
+
+#username[contenteditable="true"] {
+  background: rgba(255, 255, 255, 0.1);
+  outline: none;
+  border-bottom: 2px solid #fff;
+}
+
+.edit-button {
+  background: none;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.2s;
+  color: inherit;
+  vertical-align: middle;
+}
+
+.edit-button:hover {
+  opacity: 1;
+}
