@@ -47,5 +47,9 @@ Daftar di WeatherAPI.com dan dapatkan API Key
 Masukkan API Key kamu ke file app.js
 Buka index.html di browser
 
+Penjelasan Video Youtube
+ - untuk penjelasan lebih lanjut tentang projek bisa dilihat pada video berikut
+ [Youtube](https://youtu.be/3q5yXmbkL78)
+
 👤 Pembuat
 Agil Razzan – Proyek pembelajaran JavaScript pribadi 
